@@ -1,0 +1,148 @@
+@charset 'uft-8';
+
+
+.section{
+    margin-bottom: 80px;
+  }
+     section h2{
+      width: 100%;
+      font-weight: bold;
+      font-size: 3em;
+      color: #333333;
+      text-align: center;
+      margin-bottom: 50px;
+}
+  .section ul{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  .section li{
+    position: relative;
+    width: 33.3333333333%;
+    overflow: hidden;
+  }
+  .section li img{
+    width: 100%;
+  } 
+  .section li .txt_box{
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .section li::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #0077cc;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 10;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .section li:hover::after{
+    top: 0;
+    opacity: 0.5;
+  }
+  .section li:hover .txt_box{
+    opacity: 1;
+    z-index: 11;
+  }
+  .section .txt_box>h3{
+    font-weight: bold;
+    font-size: 2em;
+    color:white;
+    text-align: center;
+    text-shadow: 4px 4px 1 #666666;
+    margin: 20px 0;
+  }
+  .section .txt_box>p{
+    color: #666666;
+    font-size: 1.4em;
+    line-height: 2em;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 1 #666666;
+  }
+  .section{
+    margin-bottom: 80px;
+  }
+  section h2{
+      width: 100%;
+      font-weight: bold;
+      font-size: 3em;
+      color: #333333;
+      text-align: center;
+      margin-bottom: 50px;
+}
+  .section ul{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  .section li{
+    position: relative;
+    width: 33.3333333333%;
+    overflow: hidden;
+  }
+  .section li img{
+    width: 100%;
+  } 
+  .section li .txt_box{
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .section li::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #0077cc;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 10;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .section li:hover::after{
+    top: 0;
+    opacity: 0.5;
+  }
+  .section li:hover .txt_box{
+    opacity: 1;
+    z-index: 11;
+  }
+  .section .txt_box>h3{
+    font-weight: bold;
+    font-size: 2em;
+    color:white;
+    text-align: center;
+    text-shadow: 4px 4px 1 #666666;
+    margin: 20px 0;
+  }
+  .section .txt_box>p{
+    color: #666666;
+    font-size: 1.4em;
+    line-height: 2em;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 1 #666666;
+  }
+  

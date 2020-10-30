@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+@import url("./reset.css");
+@import url("./default.css");
+@import url("./header.css");
+@import url("./footer.css");
+
+h1,
+h2 {
+  text-align: center;
+  padding: 50px 0;
+}
+button {
+  cursor: pointer;
+}
+.login_form {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 640px;
+  border: 1px solid #666666;
+  padding: 30px;
+}
+.languege {
+  text-align: right;
+}
+#lang {
+  padding: 6px 10px;
+  font-size: 1.2em;
+}
+form {
+  width: 460px;
+  margin: 0 auto;
+  padding: 30px 0;
+  border-bottom: 1px solid #666666;
+}
+#user_id,
+#user_pass,
+button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 1.4em;
+}
+button {
+  border: 3px solid #0077cc;
+  background-color: white;
+  color: #0077cc;
+}
+button:hover {
+  border: 3px solid #0077cc;
+  background-color: #0077cc;
+  color: white;
+}
+button:active {
+  border: 3px solid #0077ff;
+  background-color: #0077ff;
+  color: white;
+}
+
+button:focus {
+  outline: none;
+}
+#save_chk {
+  display: none;
+}
+#chk_box {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #0077cc;
+}
+#chk_box::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 3px;
+  border-bottom: 1px solid #0077cc;
+  border-left: 1px solid #0077cc;
+  transform: rotate(-45deg) translate(-1px, 4px);
+}
+#save_chk:checked ~ #chk_box {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #0077cc;
+  background-color: #0077cc;
+}
+#save_chk:checked ~ #chk_box::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 3px;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  transform: rotate(-45deg) translate(-1px, 4px);
+}
+.sns_login > button {
+  border: 1px solid transparent;
+  color: white;
+}
+.sns_login > button:nth-of-type(1) {
+  background-color: #0077cc;
+}
+.sns_login > button:nth-of-type(1):hover,
+.sns_login > button:nth-of-type(1):focus {
+  background-color: transparent;
+  border: 1px solid #0077cc;
+  color: #0077cc;
+}
+.sns_login > button:nth-of-type(2) {
+  background-color: green;
+}
+.sns_login > button:nth-of-type(2):hover,
+.sns_login > button:nth-of-type(2):focus {
+  background-color: transparent;
+  border: 1px solid green;
+  color: green;
+}
+.sns_login > button:nth-of-type(3) {
+  background-color: #652554;
+}
+.sns_login > button:nth-of-type(3):hover,
+.sns_login > button:nth-of-type(3):focus {
+  background-color: transparent;
+  border: 1px solid #652554;
+  color: #652554;
+}
+
+/* footer */
+.footer {
+  margin-top: 40px;
+}
